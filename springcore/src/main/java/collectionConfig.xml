@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="
+ 	http://www.springframework.org/schema/context"
+ 	xmlns:p="http://www.springframework.org/schema/p"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	
+ 	
+ 	<bean class="com.springcore.collection.Emp" name="emp1">
+ 		
+ 		<property name="empName" value="Ajay"/>
+ 		
+ 		<property name="phoneNums">
+ 			<list>
+ 				<value>123654566</value>
+ 				<value>236598846</value>
+ 				<value>236598442</value>
+ 				<value>258741365</value>
+ 			</list>
+ 		</property>
+ 		
+ 		<property name="addresss">
+ 			<set>
+ 				<value>chhatarpur</value>
+ 				<value>Delhi</value>
+ 				<value>Mumbai</value>
+ 				<value>Maharast</value>
+ 			</set>
+ 		</property>
+ 		
+ 		<property name="courses">
+ 			<map>
+ 				<entry key="Java" value="2mothen"/>
+ 				<entry key="python" value="3mothen"/>
+ 				<entry key="cpp" value="1mothen"/>
+ 			</map>
+ 		</property>
+ 	
+ 	</bean>
+ 	
+ 	
+ 	<bean class="com.springcore.collection.Emp" name="emp2">
+ 		<property name="empName" value="Raj" />
+ 		
+ 		<property name="phoneNums">
+ 			<list>
+ 				<value>36255656</value>
+ 				<value>36598721</value>
+ 				<value>23658555</value>
+ 				<value>32568545</value>
+ 			</list>
+ 		
+ 		</property>
+ 		
+ 		<property name="addresss">
+ 			<set>
+ 				<value>mahoba</value>
+ 				<value>chhatarpur</value>
+ 				<value>delhi</value>
+ 				<value>bhopal</value>
+ 				
+ 			</set>
+ 		</property>
+ 		
+ 		<property name="courses">
+ 			<map>
+ 				<entry key="c">
+ 					<value>2mothen</value>
+ 				</entry>
+ 				<entry key="java">
+ 					<value>3mothen</value>
+ 				</entry>
+ 			</map>
+ 		</property>
+ 		
+ 		<property name="perops">
+ 			<props>
+ 				<prop key="hacker">ajayking</prop>
+ 				<prop key="king">thebesthacker</prop>
+ 			</props>
+ 		</property>
+ 		
+ 	</bean>
+ 	
+ 	
+</beans>

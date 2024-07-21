@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="
+ 	http://www.springframework.org/schema/context"
+ 	xmlns:p="http://www.springframework.org/schema/p"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	<!-- this is a first bean(Obj)  Using Value as a Tag-->
+ 	<bean class="com.springcore.Student" name="student1">
+ 		<property name="studentId">
+ 			<value>1001</value>
+ 		</property>
+ 		<property name="studentName">
+ 			<value>john</value>
+ 		</property>
+ 		
+ 		<property name="studentAddress">
+ 			<value>Lucnow</value>
+ 		</property>
+ 		
+ 	</bean>
+ 	
+ 	<!-- this is a Second bean(Obj) Using value as a Attributs -->
+ 	<bean class="com.springcore.Student" name="student2">
+ 		<property name="studentId" value="1002"/>
+ 		
+ 		<property name="studentName" value="hacker" />
+ 		
+ 		<property name="studentAddress" value="chhatarpur" />
+ 			
+ 	</bean>
+ 	
+ 	<!-- this is a Thrid bean(Obj) Using P Schema -->
+ 	<bean class="com.springcore.Student" name="student3" p:studentId="1003" p:studentName="AjayMan" p:studentAddress="delhi"/>
+ 	
+ 	
+ 	
+ 		
+
+</beans>
